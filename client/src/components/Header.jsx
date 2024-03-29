@@ -21,12 +21,12 @@ export default function Header() {
 
 
   return (
-    <header className="bg-slate-300 shadow-lg">
+    <header className=" shadow-lg">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-5">
         <Link to="/">
           <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
-            <span className="text-slate-700">Makaan</span>
-            <span className="text-slate-950">Nama</span>
+            <span className="text-black">Makaan</span>
+            <span className="text-black">Nama</span>
           </h1>
         </Link>
 
