@@ -47,7 +47,7 @@ export default function SignUp() {
   return (
     <>
       <div className="p-3 max-w-lg mx-auto">
-        <h1 className="text-3xl text-center font-semibold my-7">Sign Up</h1>
+        <h1 className="text-3xl text-center font-semibold my-7 text-white">Sign Up</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
           <input
@@ -76,20 +76,20 @@ export default function SignUp() {
 
           <button
             disabled={loading}
-            className="bg-slate-600 text-white p-3 rounded-xl uppercase hover:opacity-95 disabled:opacity-80"
+            className="text-white bg-gradient-to-r from-blue-400 via-blue-400 to-blue-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium text-sm p-3 text-center rounded-lg uppercase hover:opacity-95"
           >
             {loading ? "Loading..." : "Sign Up"}
           </button>
           <OAuth/>
         </form>
 
-        <div className="flex gap-3 mt-6">
+        <div className="flex gap-3 mt-6 text-white">
           <p>Have an account?</p>
           <Link to={"/sign-in"}>
-            <span className="text-blue-800">Sign In</span>
+            <span className="text-white">Sign In</span>
           </Link>
         </div>
-        {error && <p className='text-red-500 mt-5'>{error}</p>}
+        {error && <p className='text-white mt-5'>{error}</p>}
       </div>
     </>
   );

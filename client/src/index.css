@@ -3,9 +3,18 @@
 @tailwind utilities;
 
 body {
-  background-image: url(assets/bg.jpg);
+  /* background-image: url(assets/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: auto;
+  font-family:  sans-serif; */
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 2, 57, 0.774) 0%,
+    rgb(37, 37, 154) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
